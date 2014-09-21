@@ -356,9 +356,6 @@ else
                 }, 1000 / 60 );
                 document.body.appendChild( stats.domElement );
 
-                effect = new THREE.AnaglyphEffect( renderer );
-                effect.setSize( window.innerWidth, window.innerHeight  );
-
                 window.addEventListener( 'resize', onWindowResize, false );
 
             }
