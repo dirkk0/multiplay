@@ -12,7 +12,7 @@ Installation
 
 You need [nodejs](http://nodejs.org/) installed.
 
-If you are lucky, you can download the zip or clone the repo, enter the folder and execute `node server`. The you should be able to see a page on `http:\\localhost:8000`.
+If you are lucky, you can download the zip or clone the repo, enter the folder and execute `node server`. The you should be able to see a page on `http://localhost:8000`.
 
 If that doesn't work you will want to download the modules with `npm install`.
 
