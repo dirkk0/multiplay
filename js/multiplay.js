@@ -75,32 +75,32 @@ socket = io.connect();
                     // Ask the browser to lock the pointer
                     element.requestPointerLock = element.requestPointerLock || element.mozRequestPointerLock || element.webkitRequestPointerLock;
 
-                    if ( /Firefox/i.test( navigator.userAgent ) ) {
+                    // if ( /Firefox/i.test( navigator.userAgent ) ) {
 
-                        var fullscreenchange = function ( event ) {
+                    //     var fullscreenchange = function ( event ) {
 
-                            if ( document.fullscreenElement === element || document.mozFullscreenElement === element || document.mozFullScreenElement === element ) {
+                    //         if ( document.fullscreenElement === element || document.mozFullscreenElement === element || document.mozFullScreenElement === element ) {
 
-                                document.removeEventListener( 'fullscreenchange', fullscreenchange );
-                                document.removeEventListener( 'mozfullscreenchange', fullscreenchange );
+                    //             document.removeEventListener( 'fullscreenchange', fullscreenchange );
+                    //             document.removeEventListener( 'mozfullscreenchange', fullscreenchange );
 
-                                element.requestPointerLock();
-                            }
+                    //             element.requestPointerLock();
+                    //         }
 
-                        }
+                    //     }
 
-                        document.addEventListener( 'fullscreenchange', fullscreenchange, false );
-                        document.addEventListener( 'mozfullscreenchange', fullscreenchange, false );
+                    //     document.addEventListener( 'fullscreenchange', fullscreenchange, false );
+                    //     document.addEventListener( 'mozfullscreenchange', fullscreenchange, false );
 
-                        element.requestFullscreen = element.requestFullscreen || element.mozRequestFullscreen || element.mozRequestFullScreen || element.webkitRequestFullscreen;
+                    //     element.requestFullscreen = element.requestFullscreen || element.mozRequestFullscreen || element.mozRequestFullScreen || element.webkitRequestFullscreen;
 
-                        element.requestFullscreen();
+                    //     element.requestFullscreen();
 
-                    } else {
+                    // } else {
 
                         element.requestPointerLock();
 
-                    }
+                    // }
 
                 }, false );
 
@@ -366,7 +366,7 @@ else
                 camera.updateProjectionMatrix();
 
                 renderer.setSize( window.innerWidth, window.innerHeight );
-                effect.setSize( window.innerWidth, window.innerHeight  );
+                // effect.setSize( window.innerWidth, window.innerHeight  );
 
             }
             function animate() {
